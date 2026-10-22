@@ -4,9 +4,15 @@
              x:Class="Intenis_Linoy.InTenYears2"
              Title="InTenYears2">
     <Grid RowDefinitions="*,*" Margin="10">
-        
-        <Label FontSize="80" TextColor="Chocolate" Text="" Grid.Row="0" x:Name="lblResult"/>
-        
+        <Label TextColor="Chocolate" Text="lala" Grid.Row="0" x:Name="result"/>
+        <VerticalStackLayout Spacing="10" Grid.Row="1" VerticalOptions="End">
+            <Label Text="Your Name:"/>
+            <Entry x:Name="entryName"/>
+            <Label Text="Your Age:"/>
+            <Entry x:Name="entryAge"/>
+            <Slider Minimum="0" Maximum="120" ValueChanged="sliderAge_ValueChanged_1" DragCompleted="sliderAge_DragCompleted" x:Name="sliderAge"/>
+
+        </VerticalStackLayout>
     </Grid>
-    
+
 </ContentPage>
